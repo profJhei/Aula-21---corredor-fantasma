@@ -1,4 +1,7 @@
-  
+var PLAY = 1;
+var END = 0;
+var gameState = PLAY;
+
 function preload(){
   
 }
@@ -12,7 +15,8 @@ function setup() {
 function draw() {
   background(255);
   
-  if (gameState === "play") {
+  
+  if (gameState === PLAY) {
     
     if(keyDown("")){
   
@@ -39,7 +43,7 @@ function draw() {
 
   
   //escrever um código para fazer o climbersGroup (grupo de escaladores) colidir com o fantasma alterar a velocidade do fantasma  
-  //escreva um código para fazer o invisibleBlockGroup (grupo de bloco invisível) colidir com o fantasma, destruir o fantasma e mudar o estado de jogo para end.
+  //escreva um código para fazer o fantasma colidir com os obstáculos, destruir o fantasma e mudar o estado de jogo para end.
   
   drawSprites();
 }
@@ -50,7 +54,7 @@ function draw() {
 
 function spawnDoors()
 {
-  //escreva o código aqui para gerar as portas
+  //escreva o código aqui para gerar as portas a cada 240 quadros do jogo (frames)
   
   
 }
