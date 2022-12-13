@@ -47,7 +47,7 @@ function draw() {
   
   drawSprites();
 }
-  if (gameState === "end"){
+  if (gameState === END){
     
   }
 }
